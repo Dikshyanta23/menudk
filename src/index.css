@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Lora', serif;
+}
+.title h2 {
+    font-size: 2.5rem;
+
+}
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.underline {
+    background: #FFC72C;
+  width: 7rem;
+  height: 0.25rem;
+  margin: 0 auto;
+  margin-top: .5rem;
+}
+.btns {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+.btn {
+    width: 5rem;
+    background: #FFC72C;
+    border:transparent;
+    padding: 0.5rem 0;
+    border-radius: .25rem;
+    cursor: pointer;    
+}
+.menu {
+    display: grid;
+    margin: 0 auto;
+    gap: 2rem;
+    width: 90vw;
+    max-width: 1170px;
+    justify-items: center;
+}
+
+
+.item {
+    max-width: 25rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow:  0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+
+}
+.img{
+    height: 18rem;
+    width: 100%;
+}
+.item-text {
+    padding: 1rem;
+    text-align: center;
+}
+.item-header {
+    flex-wrap: wrap;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.price {
+    background: #FFC72C;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.desc {
+    color: #899499;
+    line-height: 2;
+}
+@media screen and (min-width: 992px) {
+  .menu {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .menu {
+    width: 95vw;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
