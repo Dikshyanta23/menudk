@@ -34,6 +34,7 @@ body {
 }
 .btn {
     width: 5rem;
+    font-size: 1.5rem;
     background: #FFC72C;
     border:transparent;
     padding: 0.5rem 0;
